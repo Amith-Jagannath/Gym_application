@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    
+    <title>Gripper</title>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a class="nav-link nav-link-ltr" href="#">Home</a></li>
+        <li><a class="nav-link nav-link-ltr" href="#">About</a></li>
+        <li><a class="nav-link nav-link-ltr" href="#">Contact</a></li>
+        <!-- <li><a class="nav-link nav-link-ltr" href="#">Sign-in/Sign-up</a></li> -->
+        <button id="btn">Sign-in</button>
+        <button id="btn2">Login</button>
+      </ul>
+      
+    </nav>
+    
+    <div class="text">
+      <h1>No Pain No Gain</h1>
+
+    </div>
+    <div class="modal register hidden">
+      <button class="btn--close-modal-register">&times;</button>
+      <h1 class="modal__header">Register</h1>
+      <form>
+        
+        <input type="text" id="nameRegister" placeholder="Your Name" />
+        <input type="text" id="emailRegister" placeholder="Email" />
+        <input type="password" id="passwordRegister" placeholder="password" />
+        
+        <button id="register">Register</button>
+      </form>
+    </div>
+    <div class="modal login hidden">
+      <button class="btn--close-modal-login">&times;</button>
+      <h1 class="modal__header">Login</h1>
+      <form>
+        
+
+        <input type="text" id="emailLogin" placeholder="Email" />
+        <input type="password" id="passwordLogin" placeholder="password" />
+        
+        <button id="loginBtn">Login</button>
+      </form>
+    </div>
+    <div class="overlay hidden"></div>
+   
+      <!-- <h1 class="top-left">this is me</h1> -->
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
