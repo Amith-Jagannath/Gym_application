@@ -1,6 +1,6 @@
 const btn = document.querySelector("#btn");
 const login_nav = document.querySelector("#btn2");
-const modal = document.querySelector(".modal");
+const modal = document.querySelector(".modal1");
 const overlay = document.querySelector(".overlay");
 const btncloseRegister = document.querySelector(".btn--close-modal-register");
 const btncloseLogin = document.querySelector(".btn--close-modal-login");
@@ -12,13 +12,17 @@ const passwordLogin = document.querySelector("#passwordLogin");
 const register = document.querySelector("#register");
 const login = document.querySelector(".login");
 const loginBtn = document.querySelector("#loginBtn");
+console.log("hello");
 btn.addEventListener("click", function () {
   modal.classList.remove("hidden");
   overlay.classList.remove("hidden");
+  console.log("clicked");
 });
 login_nav.addEventListener("click", function (e) {
   login.classList.remove("hidden");
   overlay.classList.remove("hidden");
+  modal.classList.add("hidden");
+  e.preventDefault();
 });
 btncloseRegister.addEventListener("click", function () {
   modal.classList.add("hidden");

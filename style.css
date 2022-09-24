@@ -6,73 +6,29 @@
   padding: 0;
   margin: 0;
 }
-body {
-  background-image: url("/gym2.jpg");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
-  background-size: cover;
-}
-
-nav ul {
-  display: flex;
-  list-style: none;
-  /* background-color: black; */
-  color: white;
-  align-items: center;
-  position: relative;
-  height: 65px;
-}
-nav ul li {
-  padding: 20px;
-  color: red;
-  font-family: "Montserrat", sans-serif;
-  text-decoration: none;
-}
-
 .nav-link {
-  /* left: 950px; */
-  font-weight: bold;
-  font-size: 14px;
-  text-transform: uppercase;
-  text-decoration: none;
   color: white;
-  padding: 20px 0px;
-  margin: 0px 20px;
-  display: inline-block;
-  position: relative;
-  opacity: 0.75;
-}
-.nav-link:hover {
-  opacity: 1;
-}
-.nav-link::before {
-  transition: 300ms;
-  height: 3px;
-  content: "";
-  position: absolute;
-  background-color: white;
 }
 
-.nav-link-ltr::before {
-  width: 0%;
-  bottom: 10px;
+.para {
+  margin-top: 21px;
+  margin-bottom: 0rem;
+  padding-left: 44px;
 }
-
-.nav-link-ltr:hover::before {
+.container-fluid {
+  color: red;
+}
+.backgrd {
+  /* background-color: #1d2026; */
+  background-image: url("/gym5.png");
+  height: 100vh;
   width: 100%;
-}
-/* 
-.container {
-  display: flex;
-  background-color: black;
+  /* overflow: hidden; */
+  background-repeat: no-repeat;
   background-size: cover;
-} */
-.top-left {
-  position: absolute;
-  top: 20px;
-  left: 16px;
-  color: white;
+}
+h1 {
+  margin-left: 29px;
 }
 /* img {
   display: block;
@@ -84,6 +40,10 @@ nav ul li {
 } */
 .img span {
   font-size: 60px;
+}
+.header-title {
+  padding: 100px 100px;
+  color: white;
 }
 
 button {
@@ -97,7 +57,7 @@ button {
   font-family: "Varela Round", sans-serif;
 }
 
-.modal {
+.modal1 {
   position: fixed;
   top: 50%;
   left: 50%;
@@ -179,9 +139,15 @@ form button {
   padding: 10px 20px;
 }
 
-.text {
+.header__title {
   margin: 10px 20px;
   left: 200;
   top: 200;
   color: white;
+}
+span {
+  color: green;
+}
+.header__title {
+  padding: 50vh 9vw;
 }

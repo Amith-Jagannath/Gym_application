@@ -5,54 +5,104 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
     <title>Gripper</title>
   </head>
   <body>
-    <nav>
-      <ul>
-        <li><a class="nav-link nav-link-ltr" href="#">Home</a></li>
-        <li><a class="nav-link nav-link-ltr" href="#">About</a></li>
-        <li><a class="nav-link nav-link-ltr" href="#">Contact</a></li>
-        <!-- <li><a class="nav-link nav-link-ltr" href="#">Sign-in/Sign-up</a></li> -->
-        <button id="btn">Sign-in</button>
-        <button id="btn2">Login</button>
-      </ul>
-      
-    </nav>
-    
-    <div class="text">
-      <h1>No Pain No Gain</h1>
+    <div class="backgrd">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <!-- my-2, my-lg-0, me-sm-0, my-sm-0 -->
+        <div class="container-fluid">
+          <img src="/LOGO.png" alt="logo" width="150px" />
 
-    </div>
-    <div class="modal register hidden">
-      <button class="btn--close-modal-register">&times;</button>
-      <h1 class="modal__header">Register</h1>
-      <form>
-        
-        <input type="text" id="nameRegister" placeholder="Your Name" />
-        <input type="text" id="emailRegister" placeholder="Email" />
-        <input type="password" id="passwordRegister" placeholder="password" />
-        
-        <button id="register">Register</button>
-      </form>
-    </div>
-    <div class="modal login hidden">
-      <button class="btn--close-modal-login">&times;</button>
-      <h1 class="modal__header">Login</h1>
-      <form>
-        
+          <!-- <a class="navbar-brand px-2" href="#">Navbar</a> -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarSupportedContent"
+          >
+            <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+              <li class="nav-item px-4">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item px-4">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item px-4">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="header__title">
+        <h1>
+          NO<br />
+          <!-- Green highlight effect -->
+          <span>Pain</span>
+          NO<br />
+          <span>Gain</span>
+        </h1>
 
-        <input type="text" id="emailLogin" placeholder="Email" />
-        <input type="password" id="passwordLogin" placeholder="password" />
-        
-        <button id="loginBtn">Login</button>
-      </form>
+        <button id="btn" type="button" class="btn btn-success">Register</button>
+      </div>
+
+      <div class="modal1 register hidden">
+        <!-- <button class="btn--close-modal-register">&times;</button> -->
+        <button
+          type="button"
+          class="btn-close btn--close-modal-register"
+          aria-label="Close"
+        ></button>
+        <h1 class="modal__header">Register</h1>
+        <form>
+          <input type="text" id="nameRegister" placeholder="Your Name" />
+          <input type="text" id="emailRegister" placeholder="Email" />
+          <input type="password" id="passwordRegister" placeholder="password" />
+
+          <button id="register" type="button" class="btn btn-success">
+            Register
+          </button>
+          <p class="para">already have an account?</p>
+          <button id="btn2" type="button" class="btn btn-success">Login</button>
+        </form>
+      </div>
+      <div class="modal1 login hidden">
+        <!-- <button class="btn--close-modal-login">&times;</button> -->
+        <button
+          type="button"
+          class="btn-close btn--close-modal-login"
+          aria-label="Close"
+        ></button>
+        <h1 class="modal__header">Login</h1>
+        <form>
+          <input type="text" id="emailLogin" placeholder="Email" />
+          <input type="password" id="passwordLogin" placeholder="password" />
+
+          <button id="loginBtn" type="button" class="btn btn-success">
+            Login
+          </button>
+        </form>
+      </div>
+      <div class="overlay hidden"></div>
     </div>
-    <div class="overlay hidden"></div>
-   
-      <!-- <h1 class="top-left">this is me</h1> -->
-    </div>
+
+    <!-- <h1 class="top-left">this is me</h1> -->
   </body>
-  <script src="script.js"></script>
+  <script src="script1.js"></script>
 </html>
